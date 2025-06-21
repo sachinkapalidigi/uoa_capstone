@@ -85,7 +85,7 @@ After you download the [**datasets**](https://drive.google.com/file/d/1FD0ddpMmW
 ```
 Here, "paper" is the paper id; "reference" is the list of paper ids **the current paper cites**; "citation" is the list of paper ids **citing the current paper**. The "label" field in ```MAG_train.json``` is optional. We do not need label information of training documents in our training process.
 
-```MAG_test.json``` has text and label information of each testing document. Each line is a json record representing one document. Its format is identical to a record in ```MAG_train.json```. However, now the "label" field is required for eveluation, and the metadata fields (i.e., "venue", "author", "reference", "citation") become optional. We do not need metadata information of testing documents during inference.
+```MAG_test.json``` has text and label information of each testing document. Each line is a json record representing one document. Its format is identical to a record in ```MAG_train.json```. However, now the "label" field is required for evaluation, and the metadata fields (i.e., "venue", "author", "reference", "citation") become optional. We do not need metadata information of testing documents during inference.
 
 ```MAG_label.json``` has the name and description of each label. Each line is a json record representing one label. For example,
 ```
